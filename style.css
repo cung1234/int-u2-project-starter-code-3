@@ -1,90 +1,105 @@
-/* The code below makes the background of the header black and the font color of the title white. Change this to match what you want for your website. */
 html {
-    background-color: rgb(222, 207, 207);
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    min-height: 100%;
+}
 
-
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Georgia', serif;
+    color: #222;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #c3b7b7;
-    color: black;
+    background: rgba(60, 60, 90, 0.97);
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    font-family: "Georgia", sans-serif;
-    
-}
-
-.causes {
-    list-style-type: none;
-    text-align: center;
-    position: relative;
-    right: 20px;
-
-}
-
-.effects {
-    list-style-type: none;
-    text-align: center;
-    position: relative;
-    right: 20px;
-}
-
-.help {
-    list-style-type: none;
-    text-align: center;
-    position: relative;
-    right: 20px;
+    padding: 40px 10px 28px 10px;
+    font-family: "Georgia", serif;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+    border-radius: 0 0 28px 28px;
+    letter-spacing: 1.5px;
 }
 
 h1 {
-    margin: 0px;
-    padding: 10px;
+    margin: 0;
+    padding: 14px 0;
+    font-size: 2.8rem;
+    letter-spacing: 2.5px;
     font-family: "Georgia", serif;
-}
-body {
-    margin: 0px;
-    margin-top: 0px;
-    
-}
-
-.section {
     text-align: center;
+}
+h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 10px 0;
+    font-family: "Georgia", serif;
 
 }
 
-#causepic {
-    width: 300px;
-    float: left;
-    position: relative;
-    right: 80px
+p {
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
 }
-
-#bear {
-    width: 150px;
-    float: left;
-    position: relative;
-    left: 20px;
-}
-#graph {
-    width: 130px;
-    float: right;
-}
-
-.image { 
-    display: flex; 
-    width: 350px;
-    height: 200px;
-
-}
-
-.imageflex {
-    margin-left: 10px; 
-    margin-top: 0;
-
-}
-
 .section1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 20px;
+    gap: 4px;
+    padding-bottom: 6px;
+    align-items: center;
 }
+
+.causes, .effects, .help {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto 24px auto;
+    padding: 0;
+    max-width: 370px;
+    background: #f7f7fa;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+
+}
+
+
+.images-row, .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.image {
+    width: 100%;
+    max-width: 350px;
+    height: 210px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: white;
+}
+
+.imageflex { 
+    display: flex; 
+    margin-left: 5px;
+
+}
+.imageflexcontent { margin-left: 5px; margin-top: 0; }
+
+.hu__hu__ { animation: hu__hu__ infinite 3s ease-in-out; 
+font-size: 40px; 
+color: white; 
+}
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
