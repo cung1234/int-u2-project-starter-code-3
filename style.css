@@ -24,11 +24,14 @@ header {
 
 h1 {
     margin: 0;
+    margin-bottom: 10px;
     padding: 14px 0;
     font-size: 2.8rem;
     letter-spacing: 2.5px;
     font-family: "Georgia", serif;
     text-align: center;
+    padding: 10px 10px;
+    background-color: rgb(254, 254, 255);
 }
 h2 {
     font-size: 1.8rem;
@@ -88,12 +91,19 @@ p {
     background: white;
 }
 
+#graph {
+    padding: 10px 16px;
+    background-color: #dcdce7;
+    border-radius: 30px;
+}
+
 .imageflex { 
     display: flex; 
     margin-left: 5px;
-
 }
-.imageflexcontent { margin-left: 5px; margin-top: 0; }
+.imageflexcontent {
+    margin-left: 5px; 
+    margin-top: 120px; }
 
 .hu__hu__ { animation: hu__hu__ infinite 3s ease-in-out; 
 font-size: 40px; 
@@ -103,3 +113,7 @@ color: white;
     50% { transform: translateY(30px) }
 }
 
+.link {
+    margin-left: 39.5%;
+
+}
